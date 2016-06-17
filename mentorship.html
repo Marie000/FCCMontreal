@@ -9,9 +9,15 @@
     <title>FCCMontreal</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <!--BOOTSTRAP-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
 </head>
 <body class="left-sidebar">
 <div id="page-wrapper">
@@ -66,14 +72,37 @@
 
     <div class="mentorshipSection">
         <div class="mentorshipButtons">
-            <button class="btn btn-primary" onClick="mentorSignup()">Sign Up to be a mentor</button>
+            <button data-toggle="modal" data-target="#SignUp">Sign Up to be a mentor</button>
         </div>
+
+        <!--Signup Modal-->
+        <div id="SignUp" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sign up to become a mentor</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
 </div>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/skel-viewport.min.js"></script>
