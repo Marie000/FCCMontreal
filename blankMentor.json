@@ -1,0 +1,26 @@
+
+
+{"users": {
+  "12345": {
+    "name": "Test",
+    "email": "test@test.com",
+    "contact": "please email me only",
+    "skills": "artificial intelligence, cooking, brain surgery",
+    "availabilities": "Every day in the month of Smarch",
+    "inPerson": false,
+    "online": true,
+    "accountActive":true
+  },
+  "67890": {
+    "name": "another test",
+    "email": "nobody@nowhere.com",
+    "contact": "call me! 555-555-5555",
+    "skills": "rocket science, time travel",
+    "availabilities": "5th Wednesday of every month",
+    "inPerson": true,
+    "online": true,
+    "accountActive":true
+  }
+}
+
+}
